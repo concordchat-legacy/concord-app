@@ -1,0 +1,10 @@
+{
+  "name": "fastweb",
+  "version": "0.0.0",
+  "description": "The Concord Web Application",
+  "repository": "https://github.com/cncrd/fastweb",
+  "author": "VincentRPS",
+  "license": "Proprietary",
+  "private": true,
+  "scripts": {}
+}
