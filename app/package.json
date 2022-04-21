@@ -1,10 +1,10 @@
 {
-  "name": "fastweb",
+  "name": "foxbat",
   "version": "0.0.0",
   "description": "The Concord Web Application",
-  "repository": "https://github.com/cncrd/fastweb",
+  "repository": "https://github.com/concordchat/foxbat",
   "author": "VincentRPS",
-  "license": "Proprietary",
+  "license": "AGPL",
   "private": true,
   "scripts": {}
 }
