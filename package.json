@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel pages/* --lazy",
-    "build": "parcel build pages/*.html"
+    "build": "parcel build pages/*"
   },
   "private": true,
   "devDependencies": {
