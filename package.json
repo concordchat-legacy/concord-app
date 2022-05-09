@@ -5,7 +5,7 @@
   "author": "Concord, Inc.",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel pages/*.html --lazy",
+    "dev": "parcel pages/* --lazy",
     "build": "parcel build pages/*.html"
   },
   "private": true,
