@@ -20,10 +20,22 @@
         window.GLOBAL_ENV = {
             API_ENDPOINT: '//concord.chat/api',
             API_VERSION: '5',
-            WEBAPP_ENDPOINT: '//concord.chat',
-            MARKETING_ENDPOINT: '//concord.chat',
-            FUTURE_ENDPOINT: '//concord.com',
+            WEBAPP_ENDPOINT: '//canary.concord.chat',
+            MARKETING_ENDPOINT: '//canary.concord.chat',
+            FUTURE_ENDPOINT: '//canary.concord.com',
         }
+        // remove context menu on desktop.
+        if (window.location.hostname === 'tauri.localhost') {
+            document.addEventListener('contextmenu', e => {
+                e.preventDefault();
+                return false;
+            }, { capture: true })
+
+            document.addEventListener('selectstart', e => {
+                e.preventDefault();
+                return false;
+            }, { capture: true })
+        };
     </script>
 </body>
 </html>
