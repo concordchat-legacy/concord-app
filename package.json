@@ -5,12 +5,14 @@
   "author": "Concord, Inc.",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel pages/* --lazy",
-    "build": "parcel build pages/*"
+    "dev:home": "parcel pages/home/* --lazy",
+    "dev:app": "parcel pages/app/* --lazy",
+    "build": "parcel build pages/home/* && parcel build pages/app/* --dist-dir dist/app"
   },
   "private": true,
   "devDependencies": {
     "@parcel/transformer-sass": "^2.5.0",
+    "@tauri-apps/cli": "^1.0.0-rc.10",
     "parcel": "^2.5.0"
   },
   "dependencies": {
