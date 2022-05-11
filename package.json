@@ -5,9 +5,12 @@
   "author": "Concord, Inc.",
   "license": "MIT",
   "scripts": {
-    "dev:home": "parcel pages/home/* --lazy",
-    "dev:app": "parcel pages/app/* --lazy",
-    "build": "parcel build pages/home/* && parcel build pages/app/* --dist-dir dist/app"
+    "dev:home": "NODE_ENV=development parcel pages/home/* --lazy",
+    "dev:app": "NODE_ENV=development parcel pages/app/* --lazy",
+    "build": "yarn build:home && yarn build:app && yarn build:assets",
+    "build:home": "parcel build pages/home/* --no-source-maps",
+    "build:app": "parcel build pages/app/* --dist-dir dist/app --no-source-maps",
+    "build:assets": "parcel build pages/assets/* --dist-dir dist/assets --no-source-maps"
   },
   "private": true,
   "devDependencies": {
@@ -16,6 +19,8 @@
     "parcel": "^2.5.0"
   },
   "dependencies": {
+    "mobx": "^6.5.0",
+    "mobx-react-lite": "^3.4.0",
     "preact": "^10.7.2"
   },
   "alias": {
