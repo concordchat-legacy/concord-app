@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next build && next export"
+    "export": "next build && next export",
+    "build:desktop": "yarn tauri build",
+    "dev:desktop": "yarn tauri dev"
   },
   "dependencies": {
     "next": "12.1.6",
