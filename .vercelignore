@@ -1,6 +1,3 @@
 node_modules/
-.parcel-cache/
-dist/
-tests/
-src-tauri/
-.env
+build/
+renovate.json
