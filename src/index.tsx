@@ -1,7 +1,7 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
-import NotFound from './404';
-import App from './App';
+import NotFound from './pages/404';
+import App from './pages/home';
+import Login from './pages/login';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
